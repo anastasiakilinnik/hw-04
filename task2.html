@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2: Todo App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Завдання 2: Todo App</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class='bx bx-home-alt'></i> На головну</a></li>
+                    <li><a href="task1.html"><i class='bx bx-data'></i> Завдання 1: Робота з публічним REST API</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container todo-app">
+            <div class="app-header">
+                <i class='bx bx-check-shield bx-lg'></i>
+                <h2>Task Manager</h2>
+            </div>
+            
+            <div class="todo-filters">
+                <button id="filterAll" class="active"><i class='bx bx-list-ul'></i> All</button>
+                <button id="filterActive"><i class='bx bx-loader-circle'></i> Active</button>
+                <button id="filterCompleted"><i class='bx bx-check-circle'></i> Completed</button>
+            </div>
+            
+            <div class="todo-input">
+                <input type="text" id="taskInput" placeholder="Enter task text...">
+                <button id="addTaskBtn"><i class='bx bx-plus'></i> Add Task</button>
+            </div>
+            
+            <ul id="todoList" class="todo-list">
+           
+            </ul>
+            
+            <div id="statusMessage" class="status-message"></div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.6/dist/notiflix-3.2.6.min.js"></script>
+    <script src="js/task2.js"></script>
+</body>
+</html> 
