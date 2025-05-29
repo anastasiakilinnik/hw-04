@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Bliss - Комплексна лабораторна робота</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Підключення стилів Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header з логотипом та навігацією -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Sugar Bliss Logo" width="150" height="60">
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <ul class="nav-list">
+                        <li><a href="#hero">Головна</a></li>
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="#products">Продукти</a></li>
+                        <li><a href="#api-section">API Demo</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#products">Продукти</a></li>
+                    <li><a href="#api-section">API Demo</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Ласкаво просимо до Sugar Bliss</h1>
+                    <p class="hero-description">Найсмачніші десерти, створені з любов'ю</p>
+                    <button class="cta-button" data-scroll-to="#products">Переглянути продукти</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section with expandable text -->
+        <section id="about" class="about-section section">
+            <div class="container">
+                <h2>Про нас</h2>
+                <div class="about-content">
+                    <p>Sugar Bliss - це сімейна кондитерська, яка вже понад 10 років радує своїх клієнтів неперевершеними десертами.</p>
+                    
+                    <div class="expandable-text">
+                        <div class="text-content">
+                            <p class="short-text">Наша місія - створювати найсмачніші торти, капкейки та солодощі...</p>
+                            <div class="full-text hidden">
+                                <p>Наша місія - створювати найсмачніші торти, капкейки та солодощі, які принесуть радість у ваше життя. Ми використовуємо тільки найкращі інгредієнти: натуральне масло, свіжі яйця, якісний шоколад та сезонні фрукти.</p>
+                                <p>Кожен наш десерт - це витвір мистецтва, створений із любов'ю та увагою до деталей. Наша команда досвідчених кондитерів щодня працює над тим, щоб ваші свята стали незабутніми.</p>
+                                <p>Ми пишаємося тим, що можемо створити індивідуальні торти для будь-якої події: дні народження, весілля, корпоративні заходи. Довіртеся нам свої найважливіші моменти!</p>
+                            </div>
+                        </div>
+                        <button class="toggle-text-btn">Читати більше</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section with Swiper -->
+        <section id="products" class="products-section section">
+            <div class="container">
+                <h2>Наші найкращі пропозиції</h2>
+                
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <img src="images/product1.png" alt="Торт з полуницею" width="300" height="300">
+                                <h3>Торт з полуницею</h3>
+                                <p class="price">₴450</p>
+                                <button class="open-modal-btn" data-modal="modal1">Детальніше</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <img src="images/product2.png" alt="Макарони" width="300" height="300">
+                                <h3>Макарони асорті</h3>
+                                <p class="price">₴250</p>
+                                <button class="open-modal-btn" data-modal="modal2">Детальніше</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <img src="images/product3.png" alt="Капкейки" width="300" height="300">
+                                <h3>Капкейки ванільні</h3>
+                                <p class="price">₴180</p>
+                                <button class="open-modal-btn" data-modal="modal3">Детальніше</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <img src="images/product4.png" alt="Шоколадний торт" width="300" height="300">
+                                <h3>Шоколадний торт</h3>
+                                <p class="price">₴520</p>
+                                <button class="open-modal-btn" data-modal="modal4">Детальніше</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Demo Section (ЛР 4) -->
+        <section id="api-section" class="api-section section">
+            <div class="container">
+                <h2>Демонстрація роботи з API</h2>
+                
+                <div class="api-controls">
+                    <button id="fetch-posts-btn" class="api-btn">FETCH POSTS</button>
+                    <button id="fetch-users-btn" class="api-btn">FETCH USERS</button>
+                    <button id="fetch-comments-btn" class="api-btn">FETCH COMMENTS</button>
+                </div>
+                
+                <div class="pagination-controls">
+                    <label for="page-input">Сторінка:</label>
+                    <input type="number" id="page-input" min="1" value="1" placeholder="Введіть номер сторінки">
+                    <label for="limit-input">Кількість на сторінці:</label>
+                    <input type="number" id="limit-input" min="1" max="20" value="5" placeholder="Введіть кількість">
+                    <button id="load-page-btn" class="api-btn">Завантажити сторінку</button>
+                </div>
+                
+                <div class="api-results" id="api-results">
+                    <!-- Результати API запитів -->
+                </div>
+                
+                <div class="pagination-info" id="pagination-info">
+                    <!-- Інформація про пагінацію -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <h2>Зв'яжіться з нами</h2>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ім'я *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Повідомлення *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Відправити</button>
+                        <button type="reset" class="reset-btn">Очистити</button>
+                    </div>
+                </form>
+                
+                <div class="form-result" id="form-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sugar Bliss</h3>
+                    <p>Найсмачніші десерти у місті</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакти</h3>
+                    <p>📍 вул. Солодка, 123, Київ</p>
+                    <p>📞 +380 50 123 45 67</p>
+                    <p>✉️ info@sugarbliss.ua</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Години роботи</h3>
+                    <p>Пн-Пт: 9:00 - 20:00</p>
+                    <p>Сб-Нд: 10:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sugar Bliss. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальні вікна -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Торт з полуницею</h2>
+            <img src="images/product1.png" alt="Торт з полуницею" width="400" height="300">
+            <p><strong>Опис:</strong> Ніжний бісквітний торт з натуральним кремом і свіжою полуницею. Ідеальний вибір для святкування дня народження або романтичної вечері.</p>
+            <p><strong>Інгредієнти:</strong> борошно, яйця, цукор, масло, полуниця, вершки, ваніль</p>
+            <p><strong>Ціна:</strong> ₴450</p>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Макарони асорті</h2>
+            <img src="images/product2.png" alt="Макарони" width="400" height="300">
+            <p><strong>Опис:</strong> Набір із 12 різнокольорових макаронів з унікальними смаками: ваніль, шоколад, полуниця, лимон, лаванда, роза.</p>
+            <p><strong>Ціна:</strong> ₴250</p>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Капкейки ванільні</h2>
+            <img src="images/product3.png" alt="Капкейки" width="400" height="300">
+            <p><strong>Опис:</strong> Набір із 6 ванільних капкейків з масляним кремом і красивими декораціями. Ідеально підходять для дитячих свят.</p>
+            <p><strong>Ціна:</strong> ₴180</p>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Шоколадний торт</h2>
+            <img src="images/product4.png" alt="Шоколадний торт" width="400" height="300">
+            <p><strong>Опис:</strong> Багатошаровий шоколадний торт з ганашем і горіховою начинкою. Справжня насолода для любителів шоколаду.</p>
+            <p><strong>Ціна:</strong> ₴520</p>
+            <button class="order-btn">Замовити</button>
+        </div>
+    </div>
+
+    <!-- Скрипти -->
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/text-toggle.js"></script>
+    <script src="js/api-handler.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    
+    <!-- Підключення Swiper.js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper-init.js"></script>
+</body>
+</html>
